@@ -34,7 +34,7 @@ bod{
 }
 
 .instagram-phone img{
-    height: 50rem;
+    height: 45rem;
 }
 
 .instagram-contine{
@@ -148,6 +148,23 @@ bod{
   }
 
   .group {
-      border: 1px solid transparent;
+      border: 0,5px solid ;
+      margin: 10px
   }
 
+
+/*coloca todas as imagens no mesmo lugar uma sobre a outra*/
+#slider {
+    position: relative;
+}
+
+/*faz com que a imagem tenha opacidade 0 (transparente) e tenha uma transição de 1 segundo*/
+#slider img{
+    opacity: 0;
+    position: absolute;
+    transition: opacity 1000ms;
+}
+/*Imagem seleconada tem opacidade 1 (vizivel)*/
+#slider img.selected { 
+    opacity: 1;
+}
